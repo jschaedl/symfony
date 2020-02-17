@@ -1996,7 +1996,11 @@ class FrameworkExtension extends Extension
             $container->getDefinition('notifier.channel.sms')->setArgument(0, null);
         }
 
-        $container->getDefinition('notifier.channel_policy')->setArgument(0, $config['channel_policy']);
+        if (empty($config['channel_policy'])) {
+            $container->getDefinition('notifier')->setArgument(1, null);
+        } else {
+            $container->getDefinition('notifier.channel_policy')->setArgument(0, $config['channel_policy']);
+        }
 
         $classToServices = [
             SlackTransportFactory::class => 'notifier.transport_factory.slack',

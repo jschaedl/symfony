@@ -24,6 +24,19 @@ final class ChannelPolicy implements ChannelPolicyInterface
 
     public function __construct(array $policy)
     {
+        if (!$policy) {
+            throw new InvalidArgumentException('Policy can\'t be empty.');
+        }
+
+        foreach ($policy as $importance => $channels) {
+            if (!is_string($importance)) {
+                throw new InvalidArgumentException('Importance must be a string value.');
+            }
+            if (!isset($policy[$importance]) || !is_array($channels) || empty($channels)) {
+                throw new InvalidArgumentException('Channels must be set and can\'t be empty.');
+            }
+        }
+
         $this->policy = $policy;
     }
 
