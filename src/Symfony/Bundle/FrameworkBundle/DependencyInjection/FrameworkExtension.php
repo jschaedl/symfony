@@ -2436,7 +2436,7 @@ class FrameworkExtension extends Extension
             $container->removeDefinition($classToServices[MercureTransportFactory::class]);
         }
 
-        if (ContainerBuilder::willBeAvailable('symfony/fake-chat-notifier', FakeSmsTransportFactory::class, ['symfony/framework-bundle']) && ContainerBuilder::willBeAvailable('symfony/fake-chat-notifier', FakeSmsTransportFactory::class, ['symfony/notifier']) && ContainerBuilder::willBeAvailable('symfony/fake-chat-notifier', FakeSmsTransportFactory::class, ['symfony/mailer'])) {
+        if (ContainerBuilder::willBeAvailable('symfony/fake-chat-notifier', FakeChatTransportFactory::class, ['symfony/framework-bundle']) && ContainerBuilder::willBeAvailable('symfony/fake-chat-notifier', FakeChatTransportFactory::class, ['symfony/notifier']) && ContainerBuilder::willBeAvailable('symfony/fake-chat-notifier', FakeSmsTransportFactory::class, ['symfony/mailer'])) {
             $container->getDefinition($classToServices[FakeChatTransportFactory::class])
                 ->replaceArgument('$mailer', new Reference('mailer'));
         }
