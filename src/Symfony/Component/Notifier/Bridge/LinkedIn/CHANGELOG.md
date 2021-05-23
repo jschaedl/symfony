@@ -7,7 +7,7 @@ CHANGELOG
  * The bridge is not marked as `@experimental` anymore
  * [BC BREAK] `LinkedInTransportFactory` is now final
 
-5.2.0
------
+5.2
+---
 
- * Added the bridge
+ * Add the bridge

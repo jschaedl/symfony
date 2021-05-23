@@ -10,7 +10,7 @@ CHANGELOG
    to:
    `public function __construct(string $token, string $channel, ?string $path = null, HttpClientInterface $client = null, EventDispatcherInterface $dispatcher = null)`
 
-5.1.0
------
+5.1
+---
 
- * Added the bridge
+ * Add the bridge

@@ -8,7 +8,7 @@ CHANGELOG
  * [BC BREAK] `ZulipTransport` is now final
  * [BC BREAK] `ZulipTransportFactory` is now final
 
-5.2.0
------
+5.2
+---
 
- * Added the bridge
+ * Add the bridge

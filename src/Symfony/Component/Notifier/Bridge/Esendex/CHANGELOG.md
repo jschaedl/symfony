@@ -10,7 +10,7 @@ CHANGELOG
    to:
    `public function __construct(string $email, string $password, string $accountReference, string $from, HttpClientInterface $client = null, EventDispatcherInterface $dispatcher = null)`
 
-5.2.0
------
+5.2
+---
 
- * Added the bridge
+ * Add the bridge

@@ -7,7 +7,7 @@ CHANGELOG
  * The bridge is not marked as `@experimental` anymore
  * Validate message types
 
-5.2.0
------
+5.2
+---
 
- * Added the bridge
+ * Add the bridge

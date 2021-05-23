@@ -12,7 +12,7 @@ CHANGELOG
    `__construct(string $space, string $accessKey, string $accessToken, string $threadKey = null, HttpClientInterface $client = null, EventDispatcherInterface $dispatcher = null)`
  * [BC BREAK] Rename the parameter `threadKey` to `thread_key` in DSN
 
-5.2.0
------
+5.2
+---
 
- * Added the bridge
+ * Add the bridge

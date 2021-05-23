@@ -6,7 +6,7 @@ CHANGELOG
 
  * The bridge is not marked as `@experimental` anymore
 
-5.0.0
------
+5.0
+---
 
- * Added the bridge
+ * Add the bridge
